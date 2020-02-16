@@ -6,6 +6,7 @@ module.exports = {
   outputDir: 'deployment',
   //= >自定义目录名称，把生成的JS/CSS/图片等静态资源放置到这个目录中
   assetsDir: 'assets',
+  indexPath: 'index.html', // 指定生成的 index.html 的输出路径(相对于 outputDir)也可以是一个绝对路径。
   //= >关闭生产环境下的资源映射（生产环境下不在创建xxx.js.map文件）
   productionSourceMap: false,
   //= >设置一些webpack配置项，用这些配置项和默认的配置项合并
@@ -25,8 +26,8 @@ module.exports = {
       errors: true
     },
     // enable HMR
-    hot: true,
-    hotOnly: true,
+    // hot: true,
+    // hotOnly: false,
     proxy: {
       '/api': {
         changeOrigin: true,
