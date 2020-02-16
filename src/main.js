@@ -14,8 +14,8 @@ Vue.use(feather);
 
 Vue.use(VueLazyload, {
   preLoad: 1.3,
-  error: 'https://pangge.app/images/load/404.jpg',
-  loading: 'https://pangge.app/images/load/loading.svg',
+  error: 'https://assets.pangge.app/images/public/404.jpg',
+  loading: 'https://assets.pangge.app/images/public/loading.svg',
   attempt: 3, // 尝试加载次数
   listenEvents: [ 'scroll' ] // 监听事件
 });

@@ -37,5 +37,8 @@ module.exports = {
     'arrow-spacing': 0,
     'quotes': [1, 'single'],
     'semi': [2, 'always'],
+    'vue/no-use-v-if-with-v-for': ['error', {
+      'allowUsingIterationVar': false
+    }]
   }
 }
